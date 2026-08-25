@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="轻量记账 · 支出追踪：分类记账、日月统计、月预算比对、多端同步。">
+  <title>轻记账 · 支出追踪</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div id="pageTitle" class="topbar-title">今天</div>
+    <div class="topbar-right">
+      <span id="syncDot" class="sync-dot" data-state="idle"></span>
+      <button id="settingsBtn" class="icon-btn" aria-label="设置">⚙</button>
+    </div>
+  </header>
+
+  <main id="view" data-view="today"></main>
+
+  <button id="fab" class="fab" aria-label="记一笔">＋</button>
+
+  <nav class="tabbar">
+    <button class="tab tab-on" data-view="today">今天</button>
+    <button class="tab" data-view="records">明细</button>
+    <button class="tab" data-view="stats">统计</button>
+  </nav>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

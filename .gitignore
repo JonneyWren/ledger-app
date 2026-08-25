@@ -1,0 +1,7 @@
+# 内部文档与隐私数据一律不入库
+PRD.md
+ledger.json
+ledger-*.json
+*.log
+.DS_Store
+Thumbs.db
