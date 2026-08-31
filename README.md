@@ -19,12 +19,6 @@ Lightweight, offline-first expense-tracking PWA with multi-device sync. Pure sta
 
 原生 ES Modules + IndexedDB + GitHub Contents API + Service Worker。无任何框架与构建工具，GitHub Pages 直接托管。
 
-## 隐私说明 Privacy
-
-- 应用代码不含任何密钥；GitHub 访问令牌（PAT）仅保存在用户本机浏览器 localStorage
-- 账本数据存放在用户自己的**私有**仓库，本公开仓库只有应用代码
-- 导出的 JSON 备份（`ledger-*.json`）已被 `.gitignore` 排除，避免误传
-
 ## 部署 Deploy（GitHub Pages）
 
 1. Fork 或推送本仓库到你的 GitHub 账号
